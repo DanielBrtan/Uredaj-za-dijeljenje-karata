@@ -136,8 +136,8 @@ Tijekom jednog ciklusa:
 6. prikaz poruke o kraju na OLED-u i zvučni signal za kraj
 ### Logika runde
 - Konstrukcija staje ispred svakog igrača te tamo DC motor izbacuje zadani broj karata, ako igrač nije posljednji
-- konstrukcija se okreće prema idućem odnosno step motor se okreće za 90 stupnjeva.
-- Nakon što se podijeli zadan broj karata svakom igraču, platforma se okreće za 270 stupnjeva unazad odnosno na početnu poziciju (zbog žica DC motora).
+konstrukcija se okreće prema idućem odnosno step motor se okreće za 90 stupnjeva
+- Nakon što se podijeli zadan broj karata svakom igraču, platforma se okreće za 270 stupnjeva unazad odnosno na početnu poziciju (zbog žica DC motora)
 ## Problemi s kojima sam se susreo
 
 - ESP-IDF nije mogao izgraditi projekt na putanji s razmakom
