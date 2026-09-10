@@ -8,6 +8,39 @@ Pritiskom tipke uređaj se pokreće te dijeljenje započinje: prije samog dijelj
 zaslonu piše kako dijeljenje započinje. Rotirajuća platforma, na kojoj su špil karata i DC motor, okreću se prema svakome igraču
 te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 
+## Arhitektura sustava
+                    ┌─────────────────┐
+                    │  Vanjsko        │
+                    │  napajanje      │
+                    └────────┬────────┘
+                             │ snaga
+              ┌──────────────┼──────────────┐
+              │              │              │
+        ┌─────▼─────┐  ┌─────▼─────┐        │
+        │  L9110    │  │  ULN2003  │        │
+        │  H-most   │  │  driver   │        │
+        └─────┬─────┘  └─────┬─────┘        │
+              │              │              │
+        ┌─────▼─────┐  ┌─────▼─────┐        │
+        │ GA25-370  │  │ 28BYJ-48  │        │
+        │ DC motor  │  │  koračni  │        │
+        └───────────┘  └───────────┘        │
+              ▲              ▲              │
+              │ signal       │ signal       │
+        ┌─────┴──────────────┴──────────────▼───┐
+        │              ESP32                    │
+        │  (upravljanje, bez prijenosa snage)   │
+        └───┬──────────────┬──────────────┬─────┘
+            │ I2C          │ UART         │ GPIO
+      ┌─────▼─────┐  ┌─────▼─────┐  ┌─────▼─────┐
+      │   OLED    │  │ DFPlayer  │  │   Tipka   │
+      │  SSD1306  │  │   Mini    │  │           │
+      └───────────┘  └─────┬─────┘  └───────────┘
+                           │
+                     ┌─────▼─────┐
+                     │  Zvučnik  │
+                     │  8Ω 0,5W  │
+                     └───────────┘
 ## Komponente
 | Komponenta | Model | Uloga |
 |---|---|---|
