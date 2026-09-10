@@ -100,7 +100,31 @@ Naredbe koje sam korsitio su :
 - idf.py set-target esp32 - ova naredba govori za koji čip se build-a, bira ispravan lanac alata i stvara sdkconfig datoteku s postavkama čipa
 - idf.py build - prevodi izvorni kod u binarnu datoteku koju čip može izvršiti
 - idf.py -p COM3 flash monitor - prijenos na ESP32 (flash-anje)
-                              
+- 
+### Struktura programa
+Program je podijeljen na skupine funkcija ovisno o tome kojim uređajem se upravlja.
+#### Upravljanje zaslonom
+oled_cmd(c) — šalje jednu naredbu upravljačkom sklopu
+oled_data(d, len) — šalje podatke u memoriju prikaza
+oled_init()  — izvodi inicijalizacijsku sekvencu
+oled_clear()  — briše cijeli prikaz
+oled_text(page, col, text) — ispisuje niz znakova na zadani položaj
+
+#### Upravljanje reprodukcijom zvuka
+df_send_cmd(cmd, param) — sastavlja i šalje naredbeni okvir
+df_play_from_folder(folder, track)  — pokreće reprodukciju zadanog zapisa
+
+#### Upravljanje step motorom
+stepper_off() — isključuje sve namotaje
+stepper_okreni(koraka, smjer)  — izvodi zadani broj koraka
+
+#### Upravljanje DC motorom i logika dijeljenja
+izbaci_kartu() — jedan ciklus izbacivanja jedne karte
+podijeli_igracu(n) — izbacuje n karata jednom igraču
+runda(n)  — dijeli n karata svakom od četiri igrača
+
+#### Očitavanje tipke
+cekaj_tipku() — blokira izvođenje do pritiska i otpuštanja
 ## Problemi s kojima sam se susreo
 
 - ESP-IDF nije mogao izgraditi projekt na putanji s razmakom
