@@ -94,7 +94,10 @@ Motori i ESP32 se napajaju preko vanjskog izvora (PowerBank).
 ## Pokretanje
 
 Za pokretanje i korištenje ESP32 koristio sam ESP-IDF v5.x bez grafičkog okruženja.
-Naredbe koje sam korsitio su : idf.py set-target esp32, idf.py build, idf.py -p COM3 flash monitor
+Naredbe koje sam korsitio su : 
+- idf.py set-target esp32 - ova naredba govori za koji čip se build-a, bira ispravan lanac alata i stvara sdkconfig datoteku s postavkama čipa
+- idf.py build - prevodi izvorni kod u binarnu datoteku koju čip može izvršiti
+- idf.py -p COM3 flash monitor - prijenos na ESP32 (flash-anje)
                               
 ## Problemi s kojima sam se susreo
 
