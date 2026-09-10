@@ -125,6 +125,19 @@ Program je podijeljen na skupine funkcija ovisno o tome kojim uređajem se uprav
 
 #### Očitavanje tipke
 - cekaj_tipku() - blokira izvođenje do pritiska i otpuštanja
+
+## Logika dijeljenja
+Tijekom jednog ciklusa:
+1. prikaže se poruka pripravnosti te se čeka pritisak tipke
+2. prikaže se tekst početka na OLEd-u i čuje se zvučni signal
+3. runda(3) - svaki igrač dobije tri karte
+4. runda(3) - svaki igrač dobije tri karte
+5. runda(2) - svaki igrač dobije dvije karte
+6. prikaz poruke o kraju na OLED-u i zvučni signal za kraj
+### Logika runde
+Konstrukcija staje ispred svakog igrača te tamo DC motor izbacuje 3 karte, ako igrač nije posljednji
+konstrukcija se okreće prema idućem odnosno step motor se okreće za 90 stupnjeva.
+Nakon što se podijele po tri karte svakom igraču, platforma se okreće za 270 stupnjeva unazad (zbog žica DC motora).
 ## Problemi s kojima sam se susreo
 
 - ESP-IDF nije mogao izgraditi projekt na putanji s razmakom
