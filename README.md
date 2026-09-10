@@ -146,4 +146,4 @@ konstrukcija se okreće prema idućem odnosno step motor se okreće za 90 stupnj
 
 - ESP-IDF nije mogao izgraditi projekt na putanji s razmakom
 - Neusklađenost brojeva pinova u kodu i na stvarnom spoju
-- Nestabilnost napajanja pri pokretanju (Problem riješen zamijenom PowerBanka).
+- Nestabilnost napajanja pri pokretanju (Problem riješen zamijenom PowerBanka)
