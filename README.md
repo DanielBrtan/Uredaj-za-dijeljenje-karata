@@ -3,11 +3,12 @@ Uređaj koji automatski dijeli karte izrađen na ESP32 mikrokontroleru.
 Uređaj dijeli špil od 32 karte četvorici igrača po pravilima igre belot (3 + 3 + 2) * 4, uz zvučnu najavu početka i kraja,
 i prikaz stanja dijeljenja na OLED zaslonu.
 
-##Funkcionalnost
+#Funkcionalnost
 Pritiskom tipke uređaj se pokreće te dijeljenje započinje: prije samog dijeljenja čuje se zvučni znak te istovremeno i na OLED
 zaslonu piše kako dijeljenje započinje. Rotirajuća platforma, na kojoj su špil karata i DC motor, okreću se prema svakome igraču
 te DC motor svakom od igrača izbacuje jednu po jednu kartu.
-##Komponente
+
+#Komponente
 | Komponenta | Model | Uloga |
 |---|---|---|
 | Mikrokontroler | ESP32-WROOM-32 | upravljanje |
@@ -20,7 +21,6 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 | Tipka | tact switch 6x6 mm | pokretanje |
 
 ##Shema spajanja
-
 | ESP32 | Spojeno na |
 |---|---|
 | GPIO25 | L9110 IA2 |
