@@ -91,9 +91,11 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 
 Motori i ESP32 se napajaju preko vanjskog izvora (PowerBank).
 
-## Pokretanje
+## Programska izvedba
 
 Za pokretanje i korištenje ESP32 koristio sam ESP-IDF v5.x bez grafičkog okruženja.
+Uređivanje izvornog koda obavljeno je u Visual Studio Code-u, a prevođenje i prijenos
+na mikrokontroler odrađeno je iz naredbenog retka.
 Naredbe koje sam korsitio su : 
 - idf.py set-target esp32 - ova naredba govori za koji čip se build-a, bira ispravan lanac alata i stvara sdkconfig datoteku s postavkama čipa
 - idf.py build - prevodi izvorni kod u binarnu datoteku koju čip može izvršiti
