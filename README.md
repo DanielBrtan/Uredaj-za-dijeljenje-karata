@@ -10,7 +10,7 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 
 ## Arhitektura sustava
 
-# Blok dijagram sustava
+### Blok dijagram sustava
                     ┌─────────────────┐
                     │  Vanjsko        │
                     │  napajanje      │
@@ -44,7 +44,7 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
                      │  8Ω 0,5W  │
                      └───────────┘
 
-# Mehanička konstrukcija
+### Mehanička konstrukcija
       ┌────────────────────────────────┐
     │   Spremnik špila + kotačić     │  ← okretna platforma
     └────────────────┬───────────────┘
