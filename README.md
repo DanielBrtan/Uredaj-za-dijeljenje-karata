@@ -9,6 +9,8 @@ zaslonu piše kako dijeljenje započinje. Rotirajuća platforma, na kojoj su šp
 te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 
 ## Arhitektura sustava
+
+# Blok dijagram sustava
                     ┌─────────────────┐
                     │  Vanjsko        │
                     │  napajanje      │
@@ -41,6 +43,27 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
                      │  Zvučnik  │
                      │  8Ω 0,5W  │
                      └───────────┘
+
+# Mehanička konstrukcija
+      ┌────────────────────────────────┐
+    │   Spremnik špila + kotačić     │  ← okretna platforma
+    └────────────────┬───────────────┘
+                  ┌──┴──┐
+                  │matica│
+          ────────┼─────┼────────────
+                  │vijak│
+              ┌───┴─────┴───┐
+              │ ležaj 625-ZZ│           ← nepomična baza
+              └───┬─────┬───┘
+                  │vijak│
+                  └──┬──┘
+              ┌──────┴──────┐
+              │  spojnica   │
+              └──────┬──────┘
+              ┌──────┴──────┐
+              │ 28BYJ-48    │
+              └─────────────┘
+                                        
 ## Komponente
 | Komponenta | Model | Uloga |
 |---|---|---|
