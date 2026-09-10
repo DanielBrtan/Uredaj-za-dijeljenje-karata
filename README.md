@@ -8,7 +8,7 @@ Pritiskom tipke uređaj se pokreće te dijeljenje započinje: prije samog dijelj
 zaslonu piše kako dijeljenje započinje. Rotirajuća platforma, na kojoj su špil karata i DC motor, okreću se prema svakome igraču
 te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 
-#Komponente
+## Komponente
 | Komponenta | Model | Uloga |
 |---|---|---|
 | Mikrokontroler | ESP32-WROOM-32 | upravljanje |
@@ -20,7 +20,7 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 | Zaslon | SSD1306 0.96" 128x64 (I2C) | prikaz stanja |
 | Tipka | tact switch 6x6 mm | pokretanje |
 
-##Shema spajanja
+## Shema spajanja
 | ESP32 | Spojeno na |
 |---|---|
 | GPIO25 | L9110 IA2 |
@@ -35,7 +35,7 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
 
 Motori i ESP32 se napajaju preko vanjskog izvora (PowerBank).
 
-##Pokretanje
+## Pokretanje
 
 Za pokretanje i korištenje ESP32 koristio sam ESP-IDF v5.x bez grafičkog okruženja.
 Naredbe koje sam korsitio su : idf.py set-target esp32, idf.py build, idf.py -p COM3 flash monitor
