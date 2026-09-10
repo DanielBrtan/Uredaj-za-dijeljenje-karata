@@ -45,7 +45,7 @@ te DC motor svakom od igrača izbacuje jednu po jednu kartu.
                      └───────────┘
 
 ### Mehanička konstrukcija
-      ┌────────────────────────────────┐
+    ┌────────────────────────────────┐
     │   Spremnik špila + kotačić     │  ← okretna platforma
     └────────────────┬───────────────┘
                   ┌──┴──┐
