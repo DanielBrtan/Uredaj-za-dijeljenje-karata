@@ -1,4 +1,4 @@
-# Uredaj-za-dijeljenje-karata
+# Uređaj za dijeljenje karata
 Uređaj koji automatski dijeli karte izrađen na ESP32 mikrokontroleru.
 Uređaj dijeli špil od 32 karte četvorici igrača po pravilima igre belot (3 + 3 + 2) * 4, uz zvučnu najavu početka i kraja,
 i prikaz stanja dijeljenja na OLED zaslonu.
