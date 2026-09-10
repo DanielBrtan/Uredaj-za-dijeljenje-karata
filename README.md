@@ -3,7 +3,7 @@ Uređaj koji automatski dijeli karte izrađen na ESP32 mikrokontroleru.
 Uređaj dijeli špil od 32 karte četvorici igrača po pravilima igre belot (3 + 3 + 2) * 4, uz zvučnu najavu početka i kraja,
 i prikaz stanja dijeljenja na OLED zaslonu.
 
-#Funkcionalnost
+## Funkcionalnost
 Pritiskom tipke uređaj se pokreće te dijeljenje započinje: prije samog dijeljenja čuje se zvučni znak te istovremeno i na OLED
 zaslonu piše kako dijeljenje započinje. Rotirajuća platforma, na kojoj su špil karata i DC motor, okreću se prema svakome igraču
 te DC motor svakom od igrača izbacuje jednu po jednu kartu.
@@ -42,6 +42,6 @@ Naredbe koje sam korsitio su : idf.py set-target esp32, idf.py build, idf.py -p 
                               
 ## Problemi s kojima sam se susreo
 
--ESP-IDF nije mogao izgraditi projekt na putanji s razmakom
--Neusklađenost brojeva pinova u kodu i na stvarnom spoju
--Nestabilnost napajanja pri pokretanju (Problem riješen zamijenom PowerBanka).
+- ESP-IDF nije mogao izgraditi projekt na putanji s razmakom
+- Neusklađenost brojeva pinova u kodu i na stvarnom spoju
+- Nestabilnost napajanja pri pokretanju (Problem riješen zamijenom PowerBanka).
