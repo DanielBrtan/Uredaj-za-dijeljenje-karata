@@ -134,6 +134,11 @@ Tijekom jednog ciklusa:
 4. runda(3) - svaki igrač dobije tri karte
 5. runda(2) - svaki igrač dobije dvije karte
 6. prikaz poruke o kraju na OLED-u i zvučni signal za kraj
+
+## Logika izbacivanja jedne karte
+- motor se pokreče unaprijed sekundu i pol te izbacuje jednu kartu i potencijalno zahvaća iduću
+- zaustavljanje motora na dvije stotinjke zbog promjene smjera 
+- zbog već navedenog potencijalnog zahvaćanja karte ispod motor se pokreće unazad jednu sekundu kako bi vratio kartu na početnu poziciju
 ### Logika runde
 - Konstrukcija staje ispred svakog igrača te tamo DC motor izbacuje zadani broj karata, ako igrač nije posljednji
 konstrukcija se okreće prema idućem odnosno step motor se okreće za 90 stupnjeva
