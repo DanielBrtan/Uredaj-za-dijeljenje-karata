@@ -99,8 +99,7 @@ na mikrokontroler odrađeno je iz naredbenog retka.
 Naredbe koje sam korsitio su : 
 - idf.py set-target esp32 - ova naredba govori za koji čip se build-a, bira ispravan lanac alata i stvara sdkconfig datoteku s postavkama čipa
 - idf.py build - prevodi izvorni kod u binarnu datoteku koju čip može izvršiti
-- idf.py -p COM3 flash monitor - prijenos na ESP32 (flash-anje)
-- 
+- idf.py -p COM3 flash monitor - prijenos na ESP32 (flash-anje) 
 ### Struktura programa
 Program je podijeljen na skupine funkcija ovisno o tome kojim uređajem se upravlja.
 #### Upravljanje zaslonom
